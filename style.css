@@ -1,0 +1,670 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  background:#000000;
+  color:#ffffff;
+  font-family:'Times New Roman', Times, sans-serif;
+  background-color:rgba(0, 0, 0, 0.947);
+  background-image: url("data:image/svg+xml,%3Csvg width='64' height='64' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 16c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zm33.414-6l5.95-5.95L45.95.636 40 6.586 34.05.636 32.636 2.05 38.586 8l-5.95 5.95 1.414 1.414L40 9.414l5.95 5.95 1.414-1.414L41.414 8zM40 48c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm0-2c3.314 0 6-2.686 6-6s-2.686-6-6-6-6 2.686-6 6 2.686 6 6 6zM9.414 40l5.95-5.95-1.414-1.414L8 38.586l-5.95-5.95L.636 34.05 6.586 40l-5.95 5.95 1.414 1.414L8 41.414l5.95 5.95 1.414-1.414L9.414 40z' fill='%231a043e' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+  font-size:16px;
+
+}
+
+a{
+  color:black;
+  text-decoration:none;
+}
+
+ol{
+  list-style:none;
+}
+
+.contenedor{
+  width:90%;
+  margin:0 auto;
+}
+
+
+
+.nav-principal{
+  font-size:20px;
+  font-style:italic;
+  background: rgb(221, 166, 93);
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  height:60px;
+  padding:20px 0;
+  
+}
+
+.imagen-nav{
+  width:37px;
+  margin-left: 10px;
+}
+
+.nav-principal ol{
+  display:flex;
+  
+}
+
+.nav-principal ol li{
+  padding:15px;
+ 
+}
+
+.nav-principal ol li a{
+  padding:7px;
+}
+
+.nav-principal ol li a:hover{
+  border-bottom:2px solid black;
+}
+
+.nav-principal ol.nav-menu{
+  flex:1;
+  margin-left:30px;
+}
+.menu-btn{
+  position: absolute;
+  cursor:pointer;
+  color:#000000;
+  top:17px;
+  right:75px;
+  z-index:2;
+  font-size:1.5rem;
+}
+
+
+hr{
+  margin:10px 0;
+}
+
+.clase-portada{
+  width:100%;
+  height:340px;
+  background:url(img/pexels-markus-spiske-114296.jpg) no-repeat center center/cover;
+  padding:50px;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:flex-end;
+
+}
+
+.clase-portada h1{
+  font-size:70px;
+  font-weight:900;
+  color:black;
+  margin-bottom:10px;
+}
+.clase-portada p{
+  font-size: 22px;
+  font-weight:600;
+  color:#fff;
+
+}
+
+.separadores{
+  width:100%;
+  height:35px;
+  margin-top: 10px;
+  background:rgb(51, 233, 93);
+}
+
+.separadores h2{
+  margin-left:10px;
+  padding:2px;
+  color:black;
+  font-weight:600;
+  font-style: italic;
+}
+
+.noticias{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+  margin:10px 0;
+}
+
+.noticias img{
+  width:100%;
+  height:160px;
+}
+
+.noticias h3{
+  font-size:21px;
+  margin:10px 0;
+  color:rgb(230, 60, 60);
+}
+
+.contenedor-resultados{
+  width:100%;
+  height:280px;
+  margin-top:10px;
+  display:flex;
+  justify-content: space-around;
+  margin-bottom:25px;
+ 
+  
+}
+
+.contenedor-resultados table{
+  background: rgb(221, 166, 93);
+}
+
+.contenedor-resultados table, th, td{
+  border:1px solid white;
+  border-collapse: collapse;
+
+}
+
+.contenedor-resultados td, th{
+  padding:4px;
+}
+.contenedor-resultados th{
+  color: black;
+  text-decoration:underline;
+}
+
+.contenedor-resultados td{
+  color: black;
+  text-align: center;
+}
+
+
+.estilo-vs{
+  color:rgb(255, 6, 6);
+
+}
+
+.contenedor-clasificacion{
+  width:100%;
+  height:495px;
+  margin-top:10px;
+  display:flex;
+  justify-content: space-around;
+  margin-bottom:25px;
+
+}
+
+.contenedor-clasificacion h4{
+  text-align:center;
+  margin-bottom:12px;
+}
+
+.contenedor-clasificacion table{
+  background:rgb(221, 166, 93);
+}
+
+.contenedor-clasificacion table, th, td{
+  border:1px solid white;
+  border-collapse: collapse;
+
+}
+
+.contenedor-clasificacion td, th{
+  padding:2px;
+}
+
+
+.contenedor-clasificacion th{
+  color:black;
+  text-decoration:underline;
+}
+
+.contenedor-clasificacion td{
+  color:black;
+  text-align:center;
+}
+
+.campeon-liga{
+  background: rgb(2, 220, 96);
+}
+
+.ascenso-liga{
+  background: rgb(81, 206, 234);
+}
+
+.descenso-liga{
+  background:rgb(219, 78, 78);
+}
+
+
+.contenedor-goles{
+  width:100%;
+  height:200px;
+  background:url(img/pexels-anton-atanasov-1655901.jpg) no-repeat;
+  display:flex;
+  justify-content: space-around;
+  align-items:center;
+
+}
+.contenedor-goles h4{
+  text-align: center;
+  margin-bottom:10px;
+  text-decoration: underline;
+  font-size: 18px;
+
+}
+
+.contenedor-goles li{
+  margin:9px 0;
+  font-size:18px;  
+  
+}
+
+.contenedor-jornada{
+  width:100%;
+  height:300px;
+  display:flex;
+  justify-content: space-around;
+  align-items:center;
+}
+
+.contenedor-jornada h4{
+  text-align: center;
+  margin-bottom:10px;
+  text-decoration: underline;
+  font-size: 18px;
+}
+
+
+.contenedor-jornada li{
+  margin:7px 0;
+  font-size:16px;  
+  
+}
+
+.contenedor-estadios{
+  width:100%;
+  height:210px;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+  margin:10px 0;
+}
+
+.contenedor-estadios img{
+  width:100%;
+  height:160px;
+}
+
+.contenedor-estadios p{
+  font-size:16px;
+  font-style: italic;
+}
+
+.contenido-titulo{
+  text-align:center;
+  margin-top:15px;
+  text-decoration:underline;
+}
+
+
+
+.contenedor-multimedia-dos{
+  width:100%;
+  height:600px;
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  gap:10px;
+  margin:15px 0;
+}
+
+.contenedor-multimedia-dos iframe{
+  width:100%;
+  border: 2px solid white;
+}
+
+.social{
+  width:100%;
+  height:100px;
+  margin-top:30px;
+  margin-bottom:10px;
+
+}
+
+.social p{
+  text-align: center;
+  padding-top:10px;
+  font-size: 30px;
+  margin-bottom:20px;
+}
+
+.link{
+  display:flex;
+  align-items: center;
+  justify-content:center;
+}
+
+.link a i {
+  font-size:30px;
+  color:white;
+}
+
+.footer-link{
+  background:rgb(221, 166, 93);
+  color:black;
+  font-size:12px;
+  padding:35px 0;
+}
+
+.footer-contenedor{
+  display: grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+  align-items:flex-start;
+  justify-content:center;
+}
+
+.footer-contenedor ol{
+  margin:0 auto;
+}
+
+.footer-contenedor ol li{
+  line-height: 2.2;
+}
+
+.footer{
+  background:rgb(210, 142, 53);
+  color: black;
+  font-size:14px;
+  padding:10px 5px;
+  text-align:center;
+}
+
+.footer a{
+  color:rgb(13, 255, 0);
+}
+ @media(max-width:930px){
+  .nav-principal ol.nav-menu{
+    display:block;
+    position: absolute;
+    top:0;
+    left:0;
+    background:#2f3640;
+    height:60%;
+    padding:15px;
+    opacity:.9;
+    transform:translateX(-400px);
+    transition:transform .5s ease-in-out;
+    
+
+  }
+  .nav-principal ol.nav-menu.show{
+    transform:translateX(-30px);
+  }
+
+  .nav-principal ol.nav-menu li{
+    padding:20px;
+    font-size:16px;
+    
+  }
+  .nav-principal ol.nav-menu a{
+    color: #fff;
+  }
+  .nav-principal ol li a:hover{
+    border-bottom:2px solid #fff;
+  }
+  
+  
+  .noticias{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .clase-portada h1{
+    font-size:42px;
+    margin-bottom:35px;
+    
+  }
+  .clase-portada p{
+    font-size:15px;
+  }
+
+  .contenedor-estadios{
+    grid-template-columns:repeat(2,1fr);
+    height:420px;
+  }
+  .contenedor-estadios p{
+    font-size:16px;
+  }
+
+  .contenedor-clasificacion{
+    height:500px;
+    font-size:13px;
+    margin-top:30px;
+  }
+
+  .contenedor-jornada{
+    display: grid;
+    height:570px;
+    
+  }
+
+  .contenedor-jornada h4{
+    font-size:16px;
+  }
+  .contenedor-jornada ul li{
+    font-size:14px;
+  }
+
+  .contenedor-resultados{
+    display:grid;
+    margin-top:30px;
+    height:590px;
+    gap:15px;
+  
+  }
+
+  .contenedor-resultados th, td{
+    font-size:14px;
+   
+  }
+
+  .contenedor-goles{
+    display:grid;
+    height:350px;
+  }
+
+  .contenedor-multimedia-dos{
+    grid-template-columns: repeat(2,1fr);
+    height:1000px;
+    gap:5px;
+  }
+
+  .footer-link{
+    font-size:12px;
+  }
+
+} 
+
+ @media(max-width:500px){
+  .nav-principal ol.nav-menu{
+    display:block;
+    position: absolute;
+    top:0;
+    left:0;
+    background:#2f3640;
+    height:50%;
+    padding:15px;
+    opacity:.9;
+    transform:translateX(-450px);
+    transition:transform .5s ease-in-out;}
+
+    .nav-principal ol.nav-menu.show{
+      transform:translateX(-30px);
+    }
+  
+    .nav-principal ol.nav-menu li{
+      padding:20px;
+      font-size:16px;
+      
+    }
+    .nav-principal ol.nav-menu a{
+      color: #fff;
+    }
+    .nav-principal ol li a:hover{
+      border-bottom:2px solid #fff;
+    }
+    
+  .clase-portada h1{
+    font-size:32px;
+    margin-bottom:40px;
+
+  }
+  .clase-portada p{
+    font-size:14px;
+  }
+  .noticias{
+    grid-template-columns:1fr;
+  }
+  .noticias img{
+    height:170px;
+  }
+
+  .noticias p{
+    font-size:14px;
+    margin-left:15px;
+
+  }
+
+
+  .contenedor-clasificacion{
+    height:450px;
+    gap:6px;
+  }
+  .contenedor-clasificacion th, td{
+    font-size: 12px;
+    
+  }
+
+  .contenedor-resultados{
+    height:550px;
+  }
+
+  .contenedor-goles{
+    display:grid;
+    height:350px;
+    
+  }
+
+  .contenedor-goles ul li{
+    font-size: 14px;
+  }
+  .contenedor-goles h4{
+    font-size: 16px;
+  }
+
+  .contenedor-estadios{
+    grid-template-columns:repeat(2,1fr);
+    height:350px;
+  }
+  .contenedor-estadios p{
+    font-size:11px;
+  }
+
+  .contenedor-estadios img{
+    height:120px;
+  }
+
+  .contenedor-multimedia-dos{
+    gap:5px;
+    height:1000px;
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .footer-link{
+    font-size:11px;
+  }
+
+  
+}
+
+@media(max-width:350px){
+  .nav-principal ol.nav-menu{
+    display:block;
+    position: absolute;
+    top:0;
+    left:0;
+    background:#2f3640;
+    height:70%;
+    padding:15px;
+    opacity:.9;
+    transform:translateX(-450px);
+    transition:transform .5s ease-in-out;}
+
+    .nav-principal ol.nav-menu.show{
+      transform:translateX(-20px);
+    }
+    
+    .menu-btn{
+      left:250px;
+    }
+    
+    .clase-portada h1{
+      font-size:24px;
+      margin-bottom:10px;
+    
+    }
+    .clase-portada p{
+      font-size:8px;
+      margin-bottom:40px;
+    }
+    .contenedor-resultados{
+      height:500px;
+    }
+    
+    .contenedor-resultados th{
+      font-size:10px;
+    }
+    .contenedor-clasificacion{
+      height:400px;
+      
+    }
+    .contenedor-clasificacion th,td{
+      font-size:10px;
+    }
+    .contenedor-estadios{
+      gap:9px;
+    }
+    .contenedor-jornada ul li{
+      font-size:12px;
+    }
+
+    .contenedor-goles ul li{
+      font-size:12px;
+    }
+
+    .contenedor-estadios img{
+      width:90%;
+
+    }
+    .contenedor-estadios p{
+      font-size:10px;
+    }
+
+    .contenedor-multimedia-dos{
+      height:1100px;
+    }
+
+    .social{
+      margin-bottom:50px;
+    }
+    .social p{
+      font-size:18px;
+    }
+
+
+
+}
+
+
+
+
+
+
